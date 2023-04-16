@@ -14,6 +14,14 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
     }
 
+    /*
+    public void mainActivity(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+    */
+
+
     public void thirdActivity(View view){
         Intent intent = new Intent(this, ThirdActivity.class);
         startActivity(intent);
