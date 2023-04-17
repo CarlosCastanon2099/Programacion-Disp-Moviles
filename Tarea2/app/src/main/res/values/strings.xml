@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Tarea2</string>
+    <string name="app_name">Form gatitos</string>
+    <string name="text_value_bienvenida">¡Bienvenido!</string>
+    <string name="text_value_instruccion">Ingresa tus datos para continuar.</string>
+    <string name="hint_correo_electronico">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="check_text_gatos">Incluir imágenes de gatos</string>
+    <string name="continuar">Continuar</string>
+    <string name="verifica_email">Por favor, ingresa un correo electrónico válido.</string>
 </resources>
