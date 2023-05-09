@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
         int id =  item.getItemId();
 
         if(id == R.id.item1){
-            Toast.makeText(this, "Seleccionaste la opción 1", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Seleccionaste la opción Ayuda", Toast.LENGTH_SHORT).show();
         } else if(id == R.id.item2){
-            Toast.makeText(this, "Seleccionaste la opción 2", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Seleccionaste la opción Cambiar contraseña", Toast.LENGTH_SHORT).show();
         } else if(id == R.id.item3){
-            Toast.makeText(this, "Seleccionaste la opción 3", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Seleccionaste la opción Ejemplos de uso", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }

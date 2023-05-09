@@ -18,7 +18,7 @@
     <string name="inicio_sesion">Inicio de sesión</string>
     <string name="info_gatos_titulo">Información de gatos</string>
     <string name="fotos_gatitos_titulo">Fotos de gatitos.</string>
-    <string name="item1">Opcion 1 xD.</string>
-    <string name="item2">Opcion 2 xDD.</string>
-    <string name="item3">Opcion 3 xDDD.</string>
+    <string name="item1">Ayuda</string>
+    <string name="item2">Cambiar contraseña</string>
+    <string name="item3">Ejemplos de uso</string>
 </resources>
