@@ -1,4 +1,4 @@
-# **Equipo Disp Moviles - Tarea 2** 😸📱
+# **Equipo Disp Moviles - Tarea 3** 😸📱
 
 - Carlos Emilio Castañón Maldonado  
 
@@ -9,10 +9,12 @@
 [![](https://media.tenor.com/SDwGg31pp4AAAAAC/maxwell-the-cat-maxwell.gif)](https://www.youtube.com/watch?v=KC6cPq-NmuU)
 
 ## **Uso**
+Al ser una extensión de la tarea 2, el uso de esta aplicación es similar a la anteriormente mencionada:
 - Dentro de la carpeta, ejecutar con Android Studio el Proyecto
 - La aplicacion esta pensada para dispositivos Android 5.0 en adelante
-- La aplicacion tiene como nombre Tarea2
+- La aplicacion tiene como nombre Tarea3
 
 - Al ejecutarse la aplicacion se pediran los datos del usuario 
-- Al ingresar los datos se puede acceder a la siguiente pantalla mediante el boton <b> CONTINUAR <b>
-- La siguiente pantalla muestra informacion relacionada con los Gatos, al oprimir el siguiente boton se redirecciona a una tercera pantalla donde se muestran varias fotos con gatos :D
+- Al ingresar los datos se puede acceder a la siguiente pantalla mediante el boton <b> CONTINUAR </b>
+- La siguiente pantalla muestra informacion relacionada con los Gatos, al oprimir el siguiente boton se redirecciona a una tercera pantalla donde se muestran varias fotos con gatos. :D
+- Una vez que se han introducido los datos de acceso, se muestra el _navigation drawer_, el cual permite cambiar fácilmente entre pantallas.
