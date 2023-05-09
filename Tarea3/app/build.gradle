@@ -42,6 +42,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
+// No estoy muy seguro de por qué, pero me marcaba error de dependencias en mi compu.
+// Si en algún momento algo falla porque no se importaron las bibliotecas, comentar estas lineas.
 configurations.implementation {
     exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
 }

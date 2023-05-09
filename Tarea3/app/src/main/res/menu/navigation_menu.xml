@@ -4,14 +4,16 @@
 
     <item
         android:id="@+id/seccion1"
-        android:title="info gatitos"
-        android:onClick="secondActivity"/>
+        android:title="@string/inicio_sesion"
+        android:onClick="mainActivity"/>
 
     <item
         android:id="@+id/seccion2"
-        android:title="imagenes gatitos"/>
+        android:title="@string/info_gatos_titulo"
+        android:onClick="secondActivity"/>
 
     <item
         android:id="@+id/seccion3"
-        android:title="algo mas" />
+        android:title="@string/fotos_gatitos_titulo"
+        android:onClick="thirdActivity"/>
 </menu>
