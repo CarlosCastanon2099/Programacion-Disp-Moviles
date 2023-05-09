@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.annotation.NonNull;
 import androidx.drawerlayout.widget.DrawerLayout;
+
+import android.view.Menu;
 import android.view.MenuItem;
 
 import android.content.Intent;
@@ -24,6 +26,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.actionbar, menu);
+        return true;
+    }
+
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id =  item.getItemId();
+
+        if(id == R.id.item1){
+            Toast.makeText(this, "Seleccionaste la opción 1", Toast.LENGTH_SHORT).show();
+        } else if(id == R.id.item2){
+            Toast.makeText(this, "Seleccionaste la opción 2", Toast.LENGTH_SHORT).show();
+        } else if(id == R.id.item3){
+            Toast.makeText(this, "Seleccionaste la opción 3", Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     public void secondActivity(View view){
