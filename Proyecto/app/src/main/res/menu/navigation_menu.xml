@@ -3,9 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <item
-        android:id="@+id/seccion1"
-        android:title="@string/inicio_sesion"
-        android:onClick="mainActivity"/>
+        android:id="@+id/perfil"
+        android:title="@string/perfil"
+        android:onClick="perfil"/>
+
+    <item
+        android:id="@+id/seccion3"
+        android:title="@string/fotos_gatitos_titulo"
+        android:onClick="thirdActivity"/>
 
     <item
         android:id="@+id/seccion2"
@@ -13,7 +18,7 @@
         android:onClick="secondActivity"/>
 
     <item
-        android:id="@+id/seccion3"
-        android:title="@string/fotos_gatitos_titulo"
-        android:onClick="thirdActivity"/>
+        android:id="@+id/seccion1"
+        android:title="@string/cerrar_sesion"
+        android:onClick="mainActivity"/>
 </menu>

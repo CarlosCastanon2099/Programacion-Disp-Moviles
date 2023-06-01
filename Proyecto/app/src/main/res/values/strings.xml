@@ -16,8 +16,8 @@
     <string name="gato2">Foto de un gato mirando hacia arriba de manera tierna.</string>
     <string name="gato1">Foto de un gato negro</string>
     <string name="inicio_sesion">Inicio de sesión</string>
-    <string name="info_gatos_titulo">Información de gatos</string>
-    <string name="fotos_gatitos_titulo">Fotos de gatitos.</string>
+    <string name="info_gatos_titulo">Acerca de (gatos)</string>
+    <string name="fotos_gatitos_titulo">Adopta un gatito</string>
     <string name="item1">Ayuda</string>
     <string name="item2">Cambiar contraseña</string>
     <string name="item3">Ejemplos de uso</string>
@@ -28,4 +28,10 @@
     <string name="verifica_contraseña_igual">Las contraseñas no coinciden. Intenta de nuevo.</string>
     <string name="ya_tienes_una_cuenta_inicia_sesi_n">¿Ya tienes una cuenta? Inicia sesión</string>
     <string name="opcion_crear_cuenta">¿No tienes una cuenta? Regístrate</string>
+    <string name="recordarme">Recordarme</string>
+    <string name="tipo_de_usuario">Tipo de usuario</string>
+    <string name="perfil">Perfil</string>
+    <string name="imagen_perfil">La imagen que sera mostrada en el perfil del usuario</string>
+    <string name="sin_valor">-</string>
+    <string name="cerrar_sesion">Cerrar sesion</string>
 </resources>

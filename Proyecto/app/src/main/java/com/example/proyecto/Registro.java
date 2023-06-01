@@ -19,28 +19,6 @@ public class Registro extends AppCompatActivity {
         setContentView(R.layout.activity_registro);
     }
 
-    /*
-    public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.actionbar, menu);
-        return true;
-    }
-     */
-
-    /*
-    public boolean onOptionsItemSelected(MenuItem item){
-        int id =  item.getItemId();
-
-        if(id == R.id.item1){
-            Toast.makeText(this, "Seleccionaste la opción Ayuda", Toast.LENGTH_SHORT).show();
-        } else if(id == R.id.item2){
-            Toast.makeText(this, "Seleccionaste la opción Cambiar contraseña", Toast.LENGTH_SHORT).show();
-        } else if(id == R.id.item3){
-            Toast.makeText(this, "Seleccionaste la opción Ejemplos de uso", Toast.LENGTH_SHORT).show();
-        }
-        return super.onOptionsItemSelected(item);
-    }
-     */
-
     public void secondActivity(View view){
         EditText textEditEmail = (EditText) findViewById(R.id.email);
         String email = textEditEmail.getText().toString();
@@ -59,8 +37,10 @@ public class Registro extends AppCompatActivity {
             msg.show();
         }
         else {
-            Intent intent = new Intent(this, SecondActivity.class);
+            Intent intent = new Intent(this, ThirdActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
+            //finish();
         }
     }
 

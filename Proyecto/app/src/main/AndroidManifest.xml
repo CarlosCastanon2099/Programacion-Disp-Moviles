@@ -19,6 +19,9 @@
             android:name=".SecondActivity"
             android:parentActivityName=".MainActivity"
             android:exported="false" />
+        <activity android:name=".Perfil"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
         <activity
             android:name=".Registro"
             android:parentActivityName=".MainActivity"

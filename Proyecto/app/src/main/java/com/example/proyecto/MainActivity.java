@@ -1,6 +1,7 @@
 package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.IntentCompat;
 
 import android.app.Activity;
 import android.view.Menu;
@@ -60,8 +61,10 @@ public class MainActivity extends AppCompatActivity {
             msg.show();
         }
         else {
-            Intent intent = new Intent(this, SecondActivity.class);
+            Intent intent = new Intent(this, ThirdActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
+            //finish();
         }
     }
 
