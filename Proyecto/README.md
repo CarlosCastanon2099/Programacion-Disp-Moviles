@@ -10,12 +10,12 @@
 
 ## **Uso**
 Al ser una extensión de la tarea 3, el uso de esta aplicación es similar a la anteriormente mencionada:
-- Dentro de la carpeta, ejecutar con Android Studio el Proyecto
-- La aplicacion esta pensada para dispositivos Android 5.0 en adelante
-- La aplicacion tiene como nombre Proyecto
+- Dentro de la carpeta, ejecutar con Android Studio el Proyecto.
+- La aplicacion esta pensada para dispositivos Android 5.0 en adelante.
+- La aplicacion tiene como nombre Proyecto.
 
-- Al ejecutarse la aplicacion se pediran los datos del usuario 
-- Se puede registrar un usuario en la sección de registro
-- Al ingresar los datos se puede navegar a través de las pantallas desde el menú _drawer_
-- La pantalla de perfil del usuario muestra información relevante para el usuario
-- La pantalla de adopción de gatos permite seleccionar un gato para adoptarlo
+- Al ejecutarse la aplicacion se pediran los datos del usuario.
+- Es **necesario** registrar un usuario en la pantalla de _Registro_ para guardarlo en la base de datos y poder iniciar sesión.
+- Al ingresar los datos se puede navegar a través de las pantallas desde el menú _drawer_.
+- La pantalla de perfil muestra información relevante del usuario.
+- La pantalla de adopción de gatos permite seleccionar un gato para adoptarlo.
