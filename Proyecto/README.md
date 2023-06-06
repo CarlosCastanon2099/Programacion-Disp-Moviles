@@ -17,5 +17,5 @@ Al ser una extensión de la tarea 3, el uso de esta aplicación es similar a la 
 - Al ejecutarse la aplicacion se pediran los datos del usuario.
 - Es **necesario** registrar un usuario en la pantalla de _Registro_ para guardarlo en la base de datos y poder iniciar sesión.
 - Al ingresar los datos se puede navegar a través de las pantallas desde el menú _drawer_.
-- La pantalla de perfil muestra información relevante del usuario.
+- La pantalla de perfil muestra información relevante del usuario, tomada desde la base de datos.
 - La pantalla de adopción de gatos permite seleccionar un gato para adoptarlo.
