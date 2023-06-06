@@ -6,7 +6,7 @@
 
 - Amir Gilberto Hidalgo Carrillo
 
-[![](https://media.tenor.com/U-vTBdF6z28AAAAd/cat-shaking.gif)](https://www.youtube.com/watch?v=KC6cPq-NmuU)
+[![](https://media.tenor.com/7_fyuUj-_BkAAAAC/bongo-cat.gif)](https://www.youtube.com/watch?v=btPJPFnesV4)
 
 ## **Uso**
 Al ser una extensión de la tarea 3, el uso de esta aplicación es similar a la anteriormente mencionada:
