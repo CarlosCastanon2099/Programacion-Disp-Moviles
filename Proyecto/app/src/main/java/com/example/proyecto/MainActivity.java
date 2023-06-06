@@ -1,9 +1,9 @@
 package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.IntentCompat;
 
-import android.app.Activity;
+import android.database.Cursor;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -11,11 +11,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +29,34 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Registro.class);
                 startActivity(intent);
+            }
+        });
+
+        Button continuar = (Button)findViewById(R.id.button_main_to_second);
+        continuar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String nombre = ((EditText)findViewById(R.id.usuario)).getText().toString();
+                String contraseña = ((EditText) findViewById(R.id.contraseña_nueva)).getText().toString();
+
+                BaseDeDatosUsuarios bd = new BaseDeDatosUsuarios(MainActivity.this);
+                Cursor usuario = bd.obtenerUsuario(nombre);
+                if(usuario.getCount() > 0){
+                    usuario.moveToFirst();
+                    String contraseñaGuardada = usuario.getString(usuario.getColumnIndexOrThrow("contraseña"));
+                    if(contraseña.equals(contraseñaGuardada)) {
+                        Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
+                        intent.putExtra("nombre", nombre);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+                    } else{
+                        Toast msg = Toast.makeText(MainActivity.this, R.string.contraseña_incorrecta, Toast.LENGTH_SHORT);
+                        msg.show();
+                    }
+                } else{
+                    Toast msg = Toast.makeText(MainActivity.this, R.string.usuario_no_existe, Toast.LENGTH_SHORT);
+                    msg.show();
+                }
             }
         });
     }
@@ -53,22 +80,4 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void secondActivity(View view){
-        EditText textEditEmail = (EditText) findViewById(R.id.email);
-        String email = textEditEmail.getText().toString();
-        if(!isEmailValid(email)){
-            Toast msg = Toast.makeText(this, R.string.verifica_email, Toast.LENGTH_SHORT);
-            msg.show();
-        }
-        else {
-            Intent intent = new Intent(this, ThirdActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent);
-            //finish();
-        }
-    }
-
-    private boolean isEmailValid(CharSequence email){
-        return Patterns.EMAIL_ADDRESS.matcher(email).matches();
-    }
 }

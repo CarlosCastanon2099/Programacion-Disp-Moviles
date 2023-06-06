@@ -1,10 +1,12 @@
 package com.example.proyecto;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 //import android.view.View;
 
@@ -39,6 +41,17 @@ public class Perfil extends AppCompatActivity {
                 Toast.makeText(Perfil.this, "El cambio de imagen no está disponible ahora", Toast.LENGTH_SHORT).show();
             }
         });
+
+        Bundle extras = getIntent().getExtras();
+        if(extras != null){
+            String nombre = extras.getString("nombre");
+            BaseDeDatosUsuarios bd = new BaseDeDatosUsuarios(this);
+            Cursor usuario = bd.obtenerUsuario(nombre);
+            usuario.moveToFirst();
+            ((TextView) findViewById(R.id.nombre_valor)).setText(nombre);
+            ((TextView)findViewById(R.id.correo_valor)).setText(usuario.getString(usuario.getColumnIndexOrThrow("correo")));
+            ((TextView)findViewById(R.id.tipo_usuario_valor)).setText(usuario.getString(usuario.getColumnIndexOrThrow("tipoUsuario")));
+        }
     }
 
     /* Componentes de navegación */
@@ -55,7 +68,6 @@ public class Perfil extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
-        //finish();
     }
 
     public void perfil(MenuItem item){

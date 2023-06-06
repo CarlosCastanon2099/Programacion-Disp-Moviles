@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.Objects;
 
@@ -75,12 +76,19 @@ public class ThirdActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
-        //finish();
     }
 
     public void perfil(MenuItem item){
-        Intent intent = new Intent(this, Perfil.class);
-        startActivity(intent);
+        Bundle extras = getIntent().getExtras();
+        if(extras != null){
+            String nombre = extras.getString("nombre");
+            Intent intent = new Intent(this, Perfil.class);
+            intent.putExtra("nombre", nombre);
+            startActivity(intent);
+        } else{
+            Toast msg = Toast.makeText(this, "No se pudo recuperar los datos del usuario", Toast.LENGTH_SHORT);
+            msg.show();
+        }
     }
 
     public void secondActivity(MenuItem item){

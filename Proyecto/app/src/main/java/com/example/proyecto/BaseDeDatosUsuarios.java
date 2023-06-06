@@ -1,21 +1,8 @@
 package com.example.proyecto;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.Toast;
-//import android.view.View;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import java.util.Objects;
-// import java.sql.*;
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -55,25 +42,19 @@ public class BaseDeDatosUsuarios extends SQLiteOpenHelper {
         contentValues.put(COL_3, contraseña);
         contentValues.put(COL_4, tipoUsuario);
         long resultado = db.insert(TABLE_NAME, null, contentValues);
-        if (resultado == -1) {
-            return false;
-        } else {
-            return true;
-        }
+        return resultado != -1;
     }
 
     // Se obtienen todos los usuarios
     public Cursor obtenerTodosLosUsuarios() {
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor res = db.rawQuery("select * from " + TABLE_NAME, null);
-        return res;
+        return db.rawQuery("select * from " + TABLE_NAME, null);
     }
 
     // Se obtiene un usuario
     public Cursor obtenerUsuario(String nombre) {
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor res = db.rawQuery("select * from " + TABLE_NAME + " where nombre = '" + nombre + "'", null);
-        return res;
+        return db.rawQuery("select * from " + TABLE_NAME + " where nombre = '" + nombre + "'", null);
     }
 
     // Se actualiza un usuario
