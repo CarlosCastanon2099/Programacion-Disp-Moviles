@@ -45,7 +45,6 @@ public class Registro extends AppCompatActivity {
                     BaseDeDatosUsuarios bd = new BaseDeDatosUsuarios(Registro.this);
                     /* Guardar la contraseña así es inseguro, pero es para probar la bd. */
                     bd.insertarUsuario(nombre, email, pass, "Estándar");
-                    Log.d("BD", "Se agregó correctamente al usuario");
                     Intent intent = new Intent(Registro.this, ThirdActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                     intent.putExtra("nombre", nombre);

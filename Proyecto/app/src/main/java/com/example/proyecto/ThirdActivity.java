@@ -35,31 +35,41 @@ public class ThirdActivity extends AppCompatActivity {
     public void changeImage10(View view) {
         ImageView imageView = (ImageView) findViewById(R.id.image_view10);
         imageView.setImageResource(R.drawable.imagen11);
+        adopcionToast("Max");
     }
 
     public void changeImage20(View view) {
         ImageView imageView = (ImageView) findViewById(R.id.image_view20);
         imageView.setImageResource(R.drawable.imagen21);
+        adopcionToast("Felix");
     }
 
     public void changeImage30(View view) {
         ImageView imageView = (ImageView) findViewById(R.id.image_view30);
         imageView.setImageResource(R.drawable.imagen31);
+        adopcionToast("Gatsby");
     }
 
     public void changeImage50(View view) {
         ImageView imageView = (ImageView) findViewById(R.id.image_view50);
         imageView.setImageResource(R.drawable.imagen51);
+        adopcionToast("Tom");
     }
 
     public void changeImage70(View view) {
         ImageView imageView = (ImageView) findViewById(R.id.image_view70);
         imageView.setImageResource(R.drawable.imagen71);
+        adopcionToast("Oreo");
     }
 
     public void changeImage80(View view) {
         ImageView imageView = (ImageView) findViewById(R.id.image_view80);
         imageView.setImageResource(R.drawable.imagen81);
+        adopcionToast("Pulgas");
+    }
+
+    private void adopcionToast(String gatoNombre){
+        Toast.makeText(this, "Contactaremos al dueño. ¡Gracias por adoptar a " + gatoNombre + "!", Toast.LENGTH_SHORT).show();
     }
 
     /* Componentes de navegación */
@@ -92,8 +102,13 @@ public class ThirdActivity extends AppCompatActivity {
     }
 
     public void secondActivity(MenuItem item){
-        Intent intent = new Intent(this, SecondActivity.class);
-        startActivity(intent);
+        Bundle extras = getIntent().getExtras();
+        if(extras != null) {
+            String nombre = extras.getString("nombre");
+            Intent intent = new Intent(this, SecondActivity.class);
+            intent.putExtra("nombre", nombre);
+            startActivity(intent);
+        }
     }
 
     public void thirdActivity(MenuItem item){

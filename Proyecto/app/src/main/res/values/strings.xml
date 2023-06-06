@@ -36,4 +36,5 @@
     <string name="cerrar_sesion">Cerrar sesion</string>
     <string name="contraseña_incorrecta">La contraseña es incorrecta.</string>
     <string name="usuario_no_existe">El usuario no fue encontrado.</string>
+    <string name="gato_adopcion_instruccion">Toca un gatito para adoptar</string>
 </resources>

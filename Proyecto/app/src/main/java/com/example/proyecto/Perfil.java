@@ -74,12 +74,22 @@ public class Perfil extends AppCompatActivity {
     }
 
     public void secondActivity(MenuItem item){
-        Intent intent = new Intent(this, SecondActivity.class);
-        startActivity(intent);
+        Bundle extras = getIntent().getExtras();
+        if(extras != null) {
+            String nombre = extras.getString("nombre");
+            Intent intent = new Intent(this, SecondActivity.class);
+            intent.putExtra("nombre", nombre);
+            startActivity(intent);
+        }
     }
 
     public void thirdActivity(MenuItem item){
-        Intent intent = new Intent(this, ThirdActivity.class);
-        startActivity(intent);
+        Bundle extras = getIntent().getExtras();
+        if(extras != null) {
+            String nombre = extras.getString("nombre");
+            Intent intent = new Intent(this, ThirdActivity.class);
+            intent.putExtra("nombre", nombre);
+            startActivity(intent);
+        }
     }
 }
