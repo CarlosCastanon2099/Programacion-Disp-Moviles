@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Form gatitos</string>
+    <string name="text_value_bienvenida">¡Bienvenido!</string>
+    <string name="text_value_instruccion">Ingresa tus datos para continuar.</string>
+    <string name="hint_correo_electronico">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="check_text_gatos">Incluir imágenes de gatos</string>
+    <string name="continuar">Continuar</string>
+    <string name="verifica_email">Por favor, ingresa un correo electrónico válido.</string>
+    <string name="abrir_drawer">Abrir</string>
+    <string name="cerrar_drawer">Cerrar</string>
+    <string name="gatos">Gatos</string>
+    <string name="gatos_info1">Al igual que sus parientes salvajes, los\ngatos domésticos son cazadores natos\ncapaces de acechar a sus presas y\nabalanzarse sobre ellas con sus garras y\ndientes.</string>
+    <string name="gatos_info2">Los gatos domésticos, compañeros de\nnuestras vidas desde tiempos remotos, han\nestado junto a nosotros durante milenios.\nSea cual sea su raza, todos los gatos\ndomésticos pertenecen a la especie\nFelis silvestris catus</string>
+    <string name="mostrar_gatitos">Mostrar gatitos</string>
+    <string name="gato2">Foto de un gato mirando hacia arriba de manera tierna.</string>
+    <string name="gato1">Foto de un gato negro</string>
+    <string name="inicio_sesion">Inicio de sesión</string>
+    <string name="info_gatos_titulo">Información de gatos</string>
+    <string name="fotos_gatitos_titulo">Fotos de gatitos.</string>
+    <string name="item1">Ayuda</string>
+    <string name="item2">Cambiar contraseña</string>
+    <string name="item3">Ejemplos de uso</string>
+</resources>
