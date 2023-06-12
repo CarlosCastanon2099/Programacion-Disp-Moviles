@@ -8,7 +8,7 @@
 
 </div>
 
-> -  Práctica 01: <em> Layout con ASCII Art. </em>
+> -  Tarea 01: <em> Layout con ASCII Art. </em>
 
 ```
                  *     *       *    *    				
@@ -31,7 +31,7 @@
 
 
   
-> -  Práctica 02: <em> Interfaces de Usuario y Uso de Multiples Pantallas. </em>
+> -  Tarea 02: <em> Interfaces de Usuario y Uso de Multiples Pantallas. </em>
 
 <div align="center">
   
@@ -40,7 +40,7 @@
 
 </div>
 
-> -  Práctica 03: <em> ActionBar y Menú Drawer.. </em>
+> -  Tarea 03: <em> ActionBar y Menú Drawer.. </em>
 
 <div align="center">
 
