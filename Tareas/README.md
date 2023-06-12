@@ -40,7 +40,7 @@
 
 </div>
 
-> -  Tarea 03: <em> ActionBar y Menú Drawer.. </em>
+> -  Tarea 03: <em> ActionBar y Menú Drawer. </em>
 
 <div align="center">
 
